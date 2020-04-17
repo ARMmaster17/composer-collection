@@ -22,8 +22,8 @@ services:
     hostname: worker
     environment:
       SPARK_CONF_DIR: /conf
-      SPARK_WORKER_CORES: 2
-      SPARK_WORKER_MEMORY: 1g
+      SPARK_WORKER_CORES: 1
+      SPARK_WORKER_MEMORY: 512m
       SPARK_PUBLIC_DNS: ${EXTERNAL_IP}
     depends_on:
       - master
